@@ -19,6 +19,8 @@ async function askQuestion(question) {
 
 async function main() {
   try {
+
+    const userQuestion = await askQuestion("\nWhat is your question? ");
    
     // close the readline
     rl.close();
