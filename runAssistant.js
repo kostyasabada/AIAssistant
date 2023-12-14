@@ -27,6 +27,8 @@ async function main() {
     let assistantId;
     const assistantFilePath = "./assistant.json";
 
+
+    // FILE
     // Check if the assistant.json file exists
     try {
       const assistantData = await fsPromises.readFile(
@@ -101,6 +103,10 @@ async function main() {
 
       if (action === "1") {
         let continueAskingQuestion = true;
+
+
+
+// question
 
         while (continueAskingQuestion) {
           const userQuestion = await askQuestion("\nWhat is your question? ");
